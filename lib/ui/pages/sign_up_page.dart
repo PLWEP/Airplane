@@ -24,6 +24,7 @@ class SignUpPage extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.only(bottom: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text('Full Name'),
               const SizedBox(
@@ -55,6 +56,7 @@ class SignUpPage extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.only(bottom: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text('Email Address'),
               const SizedBox(
@@ -86,8 +88,11 @@ class SignUpPage extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.only(bottom: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Password'),
+              const Text(
+                'Password',
+              ),
               const SizedBox(
                 height: 6,
               ),
@@ -118,6 +123,7 @@ class SignUpPage extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.only(bottom: 30),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text('Hobby'),
               const SizedBox(
@@ -156,7 +162,9 @@ class SignUpPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(defaultRadius),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/bonus');
+            },
             child: Text(
               'Get Started',
               style: whiteTextStyle.copyWith(
