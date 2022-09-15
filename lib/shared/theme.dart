@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 Color primaryColor = const Color(0xff5c40cc);
@@ -9,6 +9,7 @@ Color greenColor = const Color(0xff0ec3ae);
 Color redColor = const Color(0xffeb70a5);
 Color backgroundColor = const Color(0xfffafafa);
 Color inactiveColor = const Color(0xffd8d7ec);
+Color transparantColor = Colors.white10;
 
 TextStyle blackTextStyle = GoogleFonts.poppins(color: blackColor);
 TextStyle whiteTextStyle = GoogleFonts.poppins(color: whiteColor);
