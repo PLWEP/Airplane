@@ -1,5 +1,5 @@
 import 'package:airplane/shared/theme.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class CustomBottomNavItem extends StatelessWidget {
   final bool isSelected;
