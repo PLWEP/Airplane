@@ -1,5 +1,6 @@
 import 'package:airplane/shared/theme.dart';
 import 'package:airplane/ui/widgets/destination_card.dart';
+import 'package:airplane/ui/widgets/destination_file.dart';
 import 'package:flutter/cupertino.dart';
 
 class HomePage extends StatelessWidget {
@@ -96,12 +97,66 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  Widget newDestination() {
+    return Container(
+      margin: EdgeInsets.only(
+        top: 30,
+        left: defaultMargin,
+        right: defaultMargin,
+        bottom: 100,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'New This Year',
+            style: blackTextStyle.copyWith(
+              fontSize: 18,
+              fontWeight: semiBold,
+            ),
+          ),
+          DestinationFile(
+            name: 'Danau Beratan',
+            city: 'Singaraja',
+            imageUrl: 'assets/image_destination6.png',
+            rate: 4.5,
+          ),
+          DestinationFile(
+            name: 'Sydney Opera',
+            city: 'Australia',
+            imageUrl: 'assets/image_destination7.png',
+            rate: 4.7,
+          ),
+          DestinationFile(
+            name: 'Roma',
+            city: 'Italy',
+            imageUrl: 'assets/image_destination8.png',
+            rate: 4.8,
+          ),
+          DestinationFile(
+            name: 'Payung Teduh',
+            city: 'Singapore',
+            imageUrl: 'assets/image_destination9.png',
+            rate: 4.5,
+          ),
+          DestinationFile(
+            name: 'Hill Hey',
+            city: 'Monaco',
+            imageUrl: 'assets/image_destination10.png',
+            rate: 4.7,
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
         header(),
         popularDestination(),
+        newDestination(),
       ],
     );
   }
