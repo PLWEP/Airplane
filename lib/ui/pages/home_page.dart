@@ -115,31 +115,31 @@ class HomePage extends StatelessWidget {
               fontWeight: semiBold,
             ),
           ),
-          DestinationFile(
+          const DestinationFile(
             name: 'Danau Beratan',
             city: 'Singaraja',
             imageUrl: 'assets/image_destination6.png',
             rate: 4.5,
           ),
-          DestinationFile(
+          const DestinationFile(
             name: 'Sydney Opera',
             city: 'Australia',
             imageUrl: 'assets/image_destination7.png',
             rate: 4.7,
           ),
-          DestinationFile(
+          const DestinationFile(
             name: 'Roma',
             city: 'Italy',
             imageUrl: 'assets/image_destination8.png',
             rate: 4.8,
           ),
-          DestinationFile(
+          const DestinationFile(
             name: 'Payung Teduh',
             city: 'Singapore',
             imageUrl: 'assets/image_destination9.png',
             rate: 4.5,
           ),
-          DestinationFile(
+          const DestinationFile(
             name: 'Hill Hey',
             city: 'Monaco',
             imageUrl: 'assets/image_destination10.png',
