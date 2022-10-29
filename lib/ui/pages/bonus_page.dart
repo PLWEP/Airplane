@@ -126,7 +126,7 @@ class BonusPage extends StatelessWidget {
         ),
         width: 220,
         onPressed: () {
-          Navigator.pushNamed(context, '/main');
+          Navigator.pushNamedAndRemoveUntil(context, '/main', (route) => false);
         },
       );
     }
