@@ -47,7 +47,7 @@ class SeatItem extends StatelessWidget {
           ),
         );
       } else {
-        return SizedBox();
+        return const SizedBox();
       }
     }
 

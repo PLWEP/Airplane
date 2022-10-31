@@ -14,7 +14,7 @@ class TransactionLoading extends TransactionState {}
 class TransactionFailed extends TransactionState {
   final String error;
 
-  TransactionFailed(this.error);
+  const TransactionFailed(this.error);
 
   @override
   List<Object> get props => [error];

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:airplane/shared/theme.dart';
 import 'package:airplane/ui/widgets/booking_details_item.dart';
 import 'package:airplane/ui/widgets/custom_button.dart';
-import 'package:airplane/ui/pages/success_checkout_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
@@ -313,7 +312,7 @@ class CheckoutPage extends StatelessWidget {
             );
           }
 
-          return SizedBox();
+          return const SizedBox();
         },
       );
     }
@@ -337,8 +336,8 @@ class CheckoutPage extends StatelessWidget {
           if (state is TransactionLoading) {
             return Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.only(top: 30),
-              child: CircularProgressIndicator(),
+              margin: const EdgeInsets.only(top: 30),
+              child: const CircularProgressIndicator(),
             );
           }
           return CustomButton(

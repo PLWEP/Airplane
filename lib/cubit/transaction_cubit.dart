@@ -1,6 +1,5 @@
 import 'package:airplane/models/transaction_model.dart';
 import 'package:airplane/services/transaction_service.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 
