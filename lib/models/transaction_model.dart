@@ -1,9 +1,8 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:equatable/equatable.dart';
-
 import 'package:airplane/models/destination_model.dart';
 
 class TransactionModel extends Equatable {
+  final String id;
   final DestinationModel destination;
   final int amountOfTraveler;
   final String selectedSeats;
@@ -14,6 +13,7 @@ class TransactionModel extends Equatable {
   final int grandTotal;
 
   const TransactionModel({
+    this.id = '',
     required this.destination,
     this.amountOfTraveler = 0,
     this.selectedSeats = '',
@@ -37,4 +37,18 @@ class TransactionModel extends Equatable {
       grandTotal,
     ];
   }
+
+  factory TransactionModel.fromJson(String id, Map<String, dynamic> json) =>
+      TransactionModel(
+        id: id,
+        destination: DestinationModel.fromJson(
+            json['destination']['id'], json['destination']),
+        amountOfTraveler: json['amountOfTraveler'],
+        selectedSeats: json['selectedSeats'],
+        grandTotal: json['grandTotal'],
+        insurance: json['insurance'],
+        refundable: json['refundable'],
+        vet: json['vet'],
+        price: json['price'],
+      );
 }
