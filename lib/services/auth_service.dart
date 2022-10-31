@@ -22,10 +22,38 @@ class AuthService {
         id: userCredential.user!.uid,
         email: email,
         name: name,
+        hobby: hobby,
         balance: 2800000000,
       );
 
       await UserService().setUser(user);
+
+      return user;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Future<void> signOut() async {
+    try {
+      await _auth.signOut();
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Future<UserModel> signIn({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      UserCredential userCredential = await _auth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+
+      UserModel user =
+          await UserService().getUserById(userCredential.user!.uid);
 
       return user;
     } catch (e) {
