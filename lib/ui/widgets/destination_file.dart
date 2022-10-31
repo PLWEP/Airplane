@@ -1,20 +1,15 @@
+import 'package:airplane/models/destination_model.dart';
 import 'package:airplane/shared/theme.dart';
 import 'package:airplane/ui/pages/detail_page.dart';
 import 'package:flutter/material.dart';
 
 class DestinationFile extends StatelessWidget {
-  final String name;
-  final String city;
-  final String imageUrl;
-  final double rate;
+  final DestinationModel destination;
 
-  const DestinationFile(
-      {Key? key,
-      required this.name,
-      required this.city,
-      required this.imageUrl,
-      this.rate = 0.0})
-      : super(key: key);
+  const DestinationFile({
+    Key? key,
+    required this.destination,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +35,7 @@ class DestinationFile extends StatelessWidget {
                 borderRadius: BorderRadius.circular(defaultRadius),
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage(imageUrl),
+                  image: NetworkImage(destination.imageUrl),
                 ),
               ),
             ),
@@ -49,7 +44,7 @@ class DestinationFile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    name,
+                    destination.name,
                     style: blackTextStyle.copyWith(
                       fontSize: 18,
                       fontWeight: medium,
@@ -59,7 +54,7 @@ class DestinationFile extends StatelessWidget {
                     height: 5,
                   ),
                   Text(
-                    city,
+                    destination.city,
                     style: blackTextStyle.copyWith(
                       fontWeight: light,
                     ),
@@ -82,7 +77,7 @@ class DestinationFile extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  rate.toString(),
+                  destination.rating.toString(),
                   style: blackTextStyle.copyWith(
                     fontWeight: medium,
                   ),
