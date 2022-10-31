@@ -15,8 +15,12 @@ class DestinationFile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: ((context) => const DetailPage())));
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: ((context) => DetailPage(
+                      destination: destination,
+                    ))));
       },
       child: Container(
         margin: const EdgeInsets.only(top: 16),
