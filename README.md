@@ -17,7 +17,6 @@
 
 
 ## Screenshots
---- 
 <div align="left">
 <img src="documentation/1.png"  width="150px">
 <img src="documentation/2.png"  width="150px">
