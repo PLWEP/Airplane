@@ -5,8 +5,8 @@
 [![GitHub stars](https://img.shields.io/badge/Flutter-v3.3.6-orange?style=for-the-badge)](https://github.com/PLWEP/airplane/)
 [![GitHub stars](https://img.shields.io/badge/Dart-v2.18.2-orange?style=for-the-badge)](https://github.com/PLWEP/airplane/)
 
-**`Dependencies`** | |
-|---|---|
+**`Dependencies`** |
+|---|
 |[![GitHub stars](https://img.shields.io/badge/Google_Font-v3.0.1-green?flat-square)](https://github.com/PLWEP/airplane/) |
 [![GitHub stars](https://img.shields.io/badge/flutter_bloc-v8.1.1-green?flat-square)](https://github.com/PLWEP/airplane/) |
 |[![GitHub stars](https://img.shields.io/badge/cloud_firestore-v4.0.2-green?flat-square)](https://github.com/PLWEP/airplane/)|
@@ -18,6 +18,7 @@
 
 ## Screenshots
 --- 
+<div align="left">
 <img src="documentation/1.png"  width="150px">
 <img src="documentation/2.png"  width="150px">
 <img src="documentation/3.png"  width="150px">
@@ -26,3 +27,4 @@
 <img src="documentation/6.png"  width="150px">
 <img src="documentation/7.png"  width="150px">
 <img src="documentation/8.png"  width="150px">
+</div>
